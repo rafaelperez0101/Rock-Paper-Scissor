@@ -1,9 +1,9 @@
 # Rock-Paper-Scissor
 
 ------------------------------------------------------------------------------------------------------------------------
-Data Model
+Domain Model
 
-![DiagramaDominio](https://user-images.githubusercontent.com/118752144/204576903-505c0473-5d72-44d1-81b4-e8e5f178a02c.svg)
+<img width="272" alt="diagrama_dominio_IMG" src="https://user-images.githubusercontent.com/9613461/206060109-4deab9bf-ea0a-4ed2-97ff-b880fc613dd0.PNG">
 
 ------------------------------------------------------------------------------------------------------------------------
 MVC Diagram
