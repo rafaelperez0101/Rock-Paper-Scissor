@@ -1,0 +1,79 @@
+@startuml RockPaperScissor
+
+
+object Result{
+
+}
+
+object Player{
+}
+
+object Move{
+
+}
+
+object Turn{
+}
+
+
+object Board{
+
+
+
+}
+object RockPaperScissor{
+
+}
+
+object PlayerType{
+}
+
+object ResultType{
+
+}
+
+object Winner{
+}
+
+object Loser{
+}
+
+object Tie{
+}
+object Scissor{
+}
+object Rock{
+}
+object Paper{
+}
+ResultType <-- Winner
+ResultType <-- Loser
+ResultType <-- Tie
+
+object Human{
+}
+object IA{
+}
+
+
+RockPaperScissor *-- Turn
+Turn o-- Player
+Turn o-- Board
+
+Player --> Move
+
+Player o-left- PlayerType
+PlayerType <--up- Human
+PlayerType <--up- IA
+Player o-right-> Board
+Result o-- ResultType
+Move o-right- Result
+Board o-- Result
+
+Player --o Result
+
+Move <-- Rock
+Move <--Paper
+Move <-- Scissor
+
+@enduml

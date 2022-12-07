@@ -1,0 +1,33 @@
+@startuml
+
+!define column(x) <color:#efefef><&media-record></color> x
+!define table(x) entity x << (T, white) >>
+
+table( Player ) {
+primary_key(id): number
+column(name): varchar2
+
+}
+
+
+table( Turn ) {
+
+primary_key(id): number
+column(PlayerHuman)
+column(PlayerIA) 
+column(Board) 
+}
+
+
+table( Result ) {
+
+primary_key(id): number
+column(Piedra)
+column(Papel)
+column(Tijera)
+}
+
+Player -- Turn
+Turn -- Result
+
+@enduml
